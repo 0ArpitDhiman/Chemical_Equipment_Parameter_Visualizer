@@ -1,0 +1,81 @@
+:root {
+  --bg-main: #f1f5f9;
+  --bg-accent: #e0e7ff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  font-family: "Segoe UI", system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: var(--text-main);
+  background: linear-gradient(135deg, var(--bg-accent), var(--bg-main));
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* links */
+a {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* headings */
+h1 {
+  font-size: 2.6em;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+/* buttons */
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.7em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  color: #ffffff;
+
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+}
+
+/* light responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.1em;
+  }
+}
